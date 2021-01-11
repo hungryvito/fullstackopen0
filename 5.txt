@@ -1,0 +1,10 @@
+title 0.5 Exercise. Sequence of events when user goes to https://studies.cs.helsinki.fi/exampleapp/spa
+
+browser->server: HTTP GET notes page
+server-->browser: HTML
+browser->server: HTTP GET main.css file
+server-->browser: main.css
+browser->server: HTTP GET spa.js file
+server-->browser: spa.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: raw data returns

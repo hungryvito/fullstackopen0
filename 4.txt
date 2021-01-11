@@ -1,0 +1,15 @@
+title 0.4 Exercise. Sequence of events when user submits a note at https://studies.cs.helsinki.fi/exampleapp/notes
+
+User->browser: Note submission
+browser->server: HTTP POST: Form submititon 'new_note'
+server->browser: Redirect to '/notes' page
+
+# Page reload
+browser->server: HTTP GET notes page
+server-->browser: HTML
+browser->server: HTTP GET main.css file
+server-->browser: main.css
+browser->server: HTTP GET main.js file
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: raw data returns

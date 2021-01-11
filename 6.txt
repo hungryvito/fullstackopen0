@@ -1,0 +1,3 @@
+title 0.6 Exercise. Sequence of events when user submits a note at https://studies.cs.helsinki.fi/exampleapp/spa
+User->browser: Note submission
+browser->server: HTTP POST: Form submititon 'new_note_spa'
